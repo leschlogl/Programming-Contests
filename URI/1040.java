@@ -86,7 +86,6 @@ public class Main implements Runnable {
 			float media2 = (nExame + media) / 2;
 
 			if (media2 >= 5.0) {
-				System.out.println("Aluno aprovado.");
 				out.println("Aluno aprovado.");
 			} else {
 				out.println("Aluno reprovado.");
