@@ -22,9 +22,5 @@ public class Main {
 		float media = soma/(float)nrPessoas;
 		System.out.format("%.1f\n", media);
 
-
-
-
 	}
-
 }

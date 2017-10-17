@@ -6,10 +6,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
-
-//ALunos:
-//- Lucas Eduardo
-//- Marco Aurélio
 public class Main {
 
     //Esse é o arquivo de componentes conexos

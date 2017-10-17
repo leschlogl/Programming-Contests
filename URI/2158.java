@@ -85,8 +85,8 @@ public class Main implements Runnable {
 				long qtdeVertices = Math.abs(-qtdeArestas + ((fp + fh) - 2));
 
 
-				System.out.println("Molecula #" + qtdeMolecula + ".:.");
-				System.out.println("Possui " + qtdeVertices + " atomos e " + qtdeArestas + " ligacoes\n");
+				out.println("Molecula #" + qtdeMolecula + ".:.");
+				out.println("Possui " + qtdeVertices + " atomos e " + qtdeArestas + " ligacoes\n");
 
 				qtdeMolecula++;
 			}

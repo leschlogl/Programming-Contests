@@ -77,11 +77,11 @@ public class Main implements Runnable {
 		Arrays.sort(numOrdenados);
 
 		for (int i = 0; i < numOrdenados.length; i++) {
-			System.out.println(numOrdenados[i]);
+			out.println(numOrdenados[i]);
 		}
 		System.out.println();
 		for (int i = 0; i < numeros.length; i++) {
-			System.out.println(numeros[i]);
+			out.println(numeros[i]);
 		}
 
 	}

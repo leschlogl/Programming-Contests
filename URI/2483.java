@@ -15,7 +15,6 @@ public class Main implements Runnable {
 
 	public void run() {
 		try {
-
 			long t1 = System.currentTimeMillis();
 
 			if (judge) {
@@ -66,16 +65,13 @@ public class Main implements Runnable {
 	// solution
 
 	void solve() throws IOException {
+		int qtdeRepeticoes = readInt();
 
-		int n1 = readInt();
-		int n2 = readInt();
-
-		if(n2 % n1 == 0 || n1 % n2 == 0) {
-			out.println("Sao Multiplos");
-		} else {
-			out.println("Nao sao Multiplos");
+		System.out.print("Feliz nat");
+		for (int i = 0; i < qtdeRepeticoes; i++) {
+			out.print("a");
 		}
-
+		out.println("l!");
 	}
 
 }

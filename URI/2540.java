@@ -15,7 +15,6 @@ public class Main implements Runnable {
 
 	public void run() {
 		try {
-
 			long t1 = System.currentTimeMillis();
 
 			if (judge) {
@@ -66,14 +65,22 @@ public class Main implements Runnable {
 	// solution
 
 	void solve() throws IOException {
+		try {
+			while (true) {
+				int qtdeVotantes = readInt();
 
-		int n1 = readInt();
-		int n2 = readInt();
-
-		if(n2 % n1 == 0 || n1 % n2 == 0) {
-			out.println("Sao Multiplos");
-		} else {
-			out.println("Nao sao Multiplos");
+				int votantesSim = 0;
+				for (int i = 0; i < qtdeVotantes; i++) {
+					votantesSim += readInt();
+				}
+				if (votantesSim >= qtdeVotantes * (2 / 3.0f)) {
+					out.println("impeachment");
+				} else {
+					out.println("acusacao arquivada");
+				}
+			}
+		} catch (Exception e) {
+			// EOF will blow NULLPOINTER on READINT
 		}
 
 	}

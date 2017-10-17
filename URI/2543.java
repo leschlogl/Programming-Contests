@@ -15,7 +15,6 @@ public class Main implements Runnable {
 
 	public void run() {
 		try {
-
 			long t1 = System.currentTimeMillis();
 
 			if (judge) {
@@ -66,14 +65,27 @@ public class Main implements Runnable {
 	// solution
 
 	void solve() throws IOException {
+		try {
+			while (true) {
+				int n = readInt();
 
-		int n1 = readInt();
-		int n2 = readInt();
+				int i = readInt();
 
-		if(n2 % n1 == 0 || n1 % n2 == 0) {
-			out.println("Sao Multiplos");
-		} else {
-			out.println("Nao sao Multiplos");
+				int totalCS = 0;
+
+				for (int x = 0; x < n; x++) {
+					int id = readInt();
+					int jogo = readInt();
+
+					if (id == i && jogo == 0) {
+						totalCS++;
+					}
+				}
+				out.println(totalCS);
+
+			}
+		} catch (Exception e) {
+			// EOF will blow NULLPOINTER on READINT
 		}
 
 	}

@@ -73,7 +73,7 @@ public class Main implements Runnable {
 			int x = readInt();
 			int y = readInt();
 
-			System.out.println((x*y)/2 + " cm2");
+			out.println((x*y)/2 + " cm2");
 		}
 	}
 

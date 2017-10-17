@@ -83,9 +83,9 @@ public class Main implements Runnable {
 
 			// se algum aluno participou de todos os jantares imprime YES
 			if (hasSomeStudentAllDays(alunos, n, d)) {
-				System.out.println("yes");
+				out.println("yes");
 			} else {
-				System.out.println("no");
+				out.println("no");
 			}
 
 			n = readInt();
